@@ -1,0 +1,9 @@
+version: '3.5'
+
+services:
+  python-app1:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    volumes:
+      - './src:/usr/src/app'
